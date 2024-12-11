@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: rgb(42, 194, 92);
+    --light-primary-color: rgb(94, 222, 137);
+    --secondary-color: rgba(42, 194, 92, 0.8);
+    --text-color: #333;
+    --bg-light: #f7f7f7;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-primary: 'Ubuntu', sans-serif;
+    --font-secondary: 'Parkinsans', sans-serif;
+}
+
+body {
+    list-style: none;
+    font-family: var(--font-primary), "sans-serif";
+    font-size: 18px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid white;
+    /* creates padding around scroll thumb */
+}
+#loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    z-index: 9999;
+    transition: width 0.3s ease-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    filter: invert(1005);
+}
+
+.logo span {
+    font-family: var(--font-primary); /* Use your project's font family */
+    font-size: 1.5rem;
+    color: white; /* Adjust this if needed */
+    padding: 2px;
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+}
+
+header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-text-size-adjust: none;
+    outline: none;
+    border-radius: 0;
+    font-family: var(--font-primary), "sans-serif";
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #fff;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row{
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+
+}
+
+.paddingAllIn {
+    padding: 45px;
+}
+
+@media screen and (min-width: 1500px) {
+    .fourthSec {
+        max-width: 1440px;
+        margin: auto;
+    }
+}
+
+.helplineListingSec {
+    padding-bottom: 60px;
+    padding-top: 25px;
+}
+
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.helplineListingSec .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.helplineListingSec .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 600px;
+    background-color: white;
+    box-shadow: 3px 5px 15px 5px var(--shadow-color);
+    border-radius: 5px;
+    padding: 25px 28px;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.helplineListingSec i{
+    font-size: 25px;
+    margin: 10px;
+    color: var(--primary-color);
+}
+
+.helplineListingSec .box>div:first-child {
+    padding-bottom: 10px;
+}
+
+.helplineListingSec .box .img {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.subHeading {
+    font-size: 23px;
+    font-family: var(--font-primary);
+}
+
+.helplineListingSec .subHeading {
+    padding: 18px 0 7px;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 880px) {
+    .helplineListingSec .subHeading {
+        min-height: 81px;
+    }
+}
+
+p {
+    line-height: 25px;
+}
+
+
+.helplineListingSec .box p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.helplineListingSec .box .img img {
+    max-height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.helplineListingSec .box ul li {
+    font-size: 15px;
+    padding-top: 18px;
+    font-family: var(--font-primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.helplineListingSec .box ul li>div:first-child {
+    width: 38px;
+    text-align: center;
+}
+
+.helplineListingSec .box ul li>div.last {
+    width: calc(100% - 40px);
+}
+
+.helplineListingSec .box ul li img {
+    padding-right: 10px;
+}
+
+.helplineListingSec .box ul li span:first-child {
+    font-family: var(--font-primary);
+    font-size: 18px;
+}
+
+.helplineListingSec .box ul li a {
+    font-family: var(--font-primary);
+}
+
+.helplineListingSec .box ul li span:last-child {
+    font-family: var(--font-primary);
+}
+
+.helplineListingSec .box ul li.websiteLink a {
+    text-decoration: underline;
+}

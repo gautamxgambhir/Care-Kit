@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Assistance - Care Kit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assistance.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/pXtSLCL/carekit.png" type="image/x-icon"/>
+    <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+</head>
+
+<body>
+    <div id="loading-bar"></div>
+    <header>
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="https://i.ibb.co/vmSKxMW/medical-kit.png" alt="Care Kit Logo">
+            <span>Care Kit</span>
+        </a>
+        <h1>Assistance and Helpline</h1>
+        <p>We’re here to guide you to the resources you need. Whether it's for emotional support or immediate
+            assistance, discover a variety of services at your fingertips.</p>
+    </header>
+    <div id="listing" class="helplineListingSec fourthSec paddingAllIn snipcss-H5zRy">
+        <div class="row" id="data">
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="40" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/HuBJXA-MPower.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/HuBJXA-MPower.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">MPower Minds</div>
+                        <p class="line-clamp-3">
+                            The Mpower Minds Helpline is a mental health service dedicated to
+                            providing free, confidential support to individuals experiencing psychological distress.
+                            Available 24/7, the helpline connects callers with trained mental health professionals who
+                            offer guidance, emotional support, and resources for managing stress, anxiety, depression,
+                            and other mental health concerns. It is part of Mpower's broader mission to promote mental
+                            well-being and reduce the stigma associated with mental health issues in India. The helpline
+                            serves as a critical resource for those in need of immediate assistance.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:1800-120-820050">1800-120-820050</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>24 hours | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी, मराठी</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:mpowerminds.info@abet.co.in">mpowerminds.info@abet.co.in</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://mpowerminds.com/oneonone">https://mpowerminds.com/oneonone</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="140" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/XvvIsH-Fortis.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/XvvIsH-Fortis.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Fortis</div>
+                        <p class="line-clamp-3">Fortis Healthcare is a leading private healthcare provider in India, offering world-class medical services across hospitals, diagnostics, and day care facilities. With a network of over 40 hospitals, Fortis is committed to providing comprehensive care in various specialties, including cardiology, oncology, orthopedics, and neurology. Their focus on patient-centric care, cutting-edge technology, and skilled medical professionals has made them a trusted name in healthcare. Fortis Healthcare is dedicated to improving the quality of life and well-being of its patients.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-8376804102">+91-8376804102</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>24 Hours | Monday to Sunday</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>অসমীয়া, বাংলা , English, ગુજરાતી , हिंदी , ಕನ್ನಡ,
+                                        कोंकणी, मराठी, മലയാളം, ਪੰਜਾਬੀ , தமிழ், తెలుగు, اُردُو , राजस्थानी and
+                                        Achiku</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:mentalhealth@fortishealthcare.com">mentalhealth@fortishealthcare.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="www.fortishealthcare.com">www.fortishealthcare.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="240" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/liAAEP-1Life.jpeg"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/liAAEP-1Life.jpeg"
+                                alt="" title=""></div>
+                        <div class="subHeading">1Life Suicide Prevention &amp; Crisis Support</div>
+                        <p class="line-clamp-3">
+                            1Life is a non-profit organization committed to suicide prevention
+                            through the support of experienced mental health professionals and trained tele-counselors.
+                            Recognizing the alarming rise in suicide rates globally, 1Life focuses on improving support
+                            resources and educating the public to combat this crisis. Their approach is non-judgmental
+                            and emphasizes that suicidal tendencies can stem from various factors, such as cultural
+                            norms, legal issues, or personal struggles. They encourage individuals to seek help from
+                            psychiatric or medical facilities, highlighting that suicide doesn't end problems but rather
+                            creates lasting pain for loved ones.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="30">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:7893078930">7893078930</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>5am to 12 am</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>हिंदी, English, తెలుగు, தமிழ், ಕನ್ನಡ, മലയാളം, ગુજરાતી,
+                                        मराठी, ਪੰਜਾਬੀ, سنڌي, भोजपुरी and বাংলা</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:onelifehelpline@hotmail.com / support@1life.org.in">onelifehelpline@hotmail.com
+                                        / support@1life.org.in</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://1life.org.in/">https://1life.org.in/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="340" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/XiEqft-VTC.jpg"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/XiEqft-VTC.jpg"
+                                alt="" title=""></div>
+                        <div class="subHeading">Voice That Cares (VTC)</div>
+                        <p class="line-clamp-3">Voice That Cares (VTC) is a PAN India free public helpline that
+                            provides psychological first aid counselling support to individuals for mental health and
+                            well-being. It was launched by Ripples of Change Foundation and Heartfulness Institute to
+                            address the mental health crisis during the pandemic. It has now evolved to address a
+                            spectrum of mental health challenges, ranging from adolescent struggles to empty nest
+                            syndrome. The helpline's focus is on compassionate and non-judgemental counselling.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="40">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:8448-8448-45">8448-8448-45</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>9am-9pm | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी and తెలుగు</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a href="mailto:info@rocf.org / vtc@rocf.org">info@rocf.org /
+                                        vtc@rocf.org</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://www.rocf.org/voice-that-cares/">https://www.rocf.org/voice-that-cares/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="440" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/FPhirc-Connecting-Trust-1.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/FPhirc-Connecting-Trust-1.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Connecting Trust Distress Helpline</div>
+                        <p class="line-clamp-3">The Distress Helpline Program by Connecting Trust offers immediate
+                            emotional support to individuals in distress, especially those experiencing suicidal
+                            thoughts. Operated by trained volunteers, the helpline provides confidential, non-judgmental
+                            assistance, aiming to de-escalate crises and offer guidance on coping strategies. It serves
+                            as a vital resource for those feeling overwhelmed, helping them connect to further mental
+                            health services if needed. The program is part of a broader effort to prevent suicide and
+                            promote mental well-being across communities.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="50">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-9922001122">+91-9922001122</a>, <a href="tel:+91-9922004305">
+                                        +91-9922004305</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>12:00 PM - 08:00 PM | All days of the week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी, मराठी</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:distressmailsconnecting@gmail.com">distressmailsconnecting@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://connectingngo.org/programs/distress-helpline-program/">https://connectingngo.org/programs/distress-helpline-program/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="540" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/fIgAuE-Roshini.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/fIgAuE-Roshini.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Roshni Trust</div>
+                        <p class="line-clamp-3">Roshni Trust is a voluntary organization dedicated to valuing human life. Operating the Roshni Helpline, it has been providing free, confidential emotional support to individuals facing depression and suicidal thoughts for over 20 years. Based in Sindhi Colony, Secunderabad, Roshni Trust offers a safe, non-judgmental space for those in need, helping them navigate difficult emotions. The trust’s mission is to provide immediate assistance to those in distress and contribute to mental well-being in the community.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="60">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+918142020033/+918142020044">+91 8142020033/+91 8142020044</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>11:00 AM - 9:00 PM | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>తెలుగు, हिंदी, English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a href="mailto:roshnihelp@gmail.com">roshnihelp@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://roshinitrust.com/">https://roshinitrust.com/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="640" class="box relative">
+                    <div>
+                        <div class="img"><img class=" ls-is-cached lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/zAAzJy-Lifeline.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/zAAzJy-Lifeline.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Lifeline</div>
+                        <p class="line-clamp-3">Lifeline offers a free tele-helpline providing emotional support to
+                            people who are in despair, depressed or suicidal. Face to face befriending with prior
+                            appointment is also available. The services offered are unconditional, non-judgemental and
+                            confidential. Lifeline Foundation is a suicide prevention NGO based in Kolkata and conducts
+                            various outreach programs across the city.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="70">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-9163940404">+91-9163940404</a>, <a href="tel:+91-9088030303">
+                                        +91-9088030303</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>10:00 AM - 10:00 PM | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>বাংলা, हिंदी, English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:lifelinekolkata@gmail.com">lifelinekolkata@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://www.lifelinefoundation.in/">https://www.lifelinefoundation.in/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="740" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/hcKfZa-Mann-talks.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/hcKfZa-Mann-talks.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Mann Talks</div>
+                        <p class="line-clamp-3">A Shantital Shanghvi Foundation initiative, Mann Talks focuses on
+                            empowering individuals to take charge of their mental health. A team of trained mental
+                            health professionals offers an empathetic and non-judgmental environment where one can share
+                            their thoughts, emotions, and experiences freely. They guide individuals in making informed
+                            decisions about their mental health.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="80">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-8686139139">+91-8686139139</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>9:00 AM - 8:00 PM | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>हिंदी, English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:counselling@manntalks.org">counselling@manntalks.org</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://www.manntalks.org/">https://www.manntalks.org/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="840" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/QYUHht-Arpita.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/QYUHht-Arpita.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Arpita Foundation</div>
+                        <p class="line-clamp-3">Arpita Foundation, a Bangalore-based non-profit, offers
+                            professional counseling and guidance to individuals across India. Founded by Patrick and
+                            joined by Dr. Kalyani Keerthi Giridhara, the Foundation focuses on its Helpline Service to
+                            support those feeling helpless, hopeless, or worthless. Initially managed by a small group
+                            of experienced counselors, the team has now expanded to include trained volunteers certified
+                            as Gate Keepers in Suicide Prevention, ensuring comprehensive mental health support.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="90">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+918023655557">+91 80 23655557</a>, <a href="tel:+918023656667"> +91 80
+                                        23656667</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>7:00 AM - 09:00 PM | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी, اردو, ಕನ್ನಡ, தமிழ், తెలుగు, മലയാളം,
+                                        कोंकणी, অহমিয়া, ગુજરતી, বাংলা</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:arpita.helpline@gmail.com">arpita.helpline@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://www.arpitafoundation.org/">https://www.arpitafoundation.org/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="940" class="box relative">
+                    <div>
+                        <div class="img"><img class=" ls-is-cached lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/ItMeGB-Sangath.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/ItMeGB-Sangath.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Sangath</div>
+                        <p class="line-clamp-3">Sangath is a not-for-profit organisation working in Goa, India for
+                            24 years to make mental health services accessible and affordable. They have a dedicated
+                            COVID 19 well-being centre which offers community support, free tele-counselling and
+                            self-management resources for frontline workers and young people in need of psychological
+                            support amidst the pandemic.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="100">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:011-41198666">011-41198666</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>10:00 AM - 6:00 PM | | 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी, मराठी, कोंकणी</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a href="mailto:contactus@sangath.in">contactus@sangath.in</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://sangath.in/">https://sangath.in/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="1040" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/IQyXcd-Sumaitri.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/IQyXcd-Sumaitri.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Sumaitri</div>
+                        <p class="line-clamp-3">Sumaitri is a crisis intervention centre for the depressed,
+                            distressed and suicidal. It provides unconditional and unbiased emotional support to anyone
+                            who calls, visits or writes to them. Its trained volunteers man the centre and helpline 365
+                            days a year. Callers are ensured complete anonymity and confidentiality. Services offered at
+                            Sumaitri are free of charge.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="110">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:011-23389090">011-23389090</a>, <a href="tel:+91-9315767849">
+                                        +91-9315767849</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>12:30 PM - 5:00 PM| 7 days a week</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>हिंदी, English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:feelingsuicidal@sumaitri.net">feelingsuicidal@sumaitri.net</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://www.sumaitri.net/">https://www.sumaitri.net/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="1140" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/gGvSxX-iCall.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/gGvSxX-iCall.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">iCALL</div>
+                        <p class="line-clamp-3">iCALL is a psychosocial helpline for individuals in emotional and
+                            psychological distress. They provide professional and free counseling through technology
+                            assisted mediums such as telephone, email and chat to anyone in need of emotional support,
+                            irrespective of age, gender, sexual orientation or race, and transcending geographical
+                            distances while ensuring confidentiality.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="120">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:022-25521111">022-25521111</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>10 AM - 8 PM | Monday to Saturday</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>मराठी, বাংলা, తెలుగు, हिंदी, English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a href="mailto:icall@tiss.edu">icall@tiss.edu</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://icallhelpline.org/">https://icallhelpline.org/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="1240" class="box relative">
+                    <div>
+                        <div class="img"><img class=" ls-is-cached lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/xZQeLS-Muktaa.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/xZQeLS-Muktaa.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Muktaa Helpline</div>
+                        <p class="line-clamp-3">Backed by over 15 years of experience in running successful
+                            helplines, Muktaa Charitable Foundation is a registered non-profit that has been at the
+                            forefront of social welfare initiatives for HIV/AIDS, mental health, addiction, sexual
+                            health awareness, gender sensitisation, and life skill education. MCF has made a significant
+                            impact on the lives of individuals and communities that has earned us recognition and
+                            support, including 80G and CSR status, as well as an FCRA licence in the process of being
+                            renewed. It takes courage to acknowledge you need support and reach out for it. When you do,
+                            we will be here for you. In a world where mental health struggles are often misunderstood
+                            and overlooked, our free Mental Health Helpline provides telephonic counselling with top
+                            psychologists anytime, anywhere. You Don't Need a "Big Reason" to Reach Out To Us. A few (of
+                            many) very good reasons to talk to us are Suicidal Thoughts, Uncontrollable Anger,
+                            Relationship Issues, Sexual Concerns, Family &amp; Relatives, Peers &amp; Friendships,
+                            Academics &amp; Career, Sadness &amp; Depression, Gender &amp; Sexuality, and Anxiety &amp;
+                            Stress.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="130">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:788-788-9882">788-788-9882 </a>, <a href="tel:080-69267931">
+                                        080-69267931</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>12-8 PM | Monday-Saturday</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English, हिंदी, मराठी</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a href="mailto:contactus@mcf.org.in">contactus@mcf.org.in</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://mcf.org.in/mental-health/">https://mcf.org.in/mental-health/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="1340" class="box relative">
+                    <div>
+                        <div class="img"><img class=" ls-is-cached lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/AnLrKP-Parivarthan.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/AnLrKP-Parivarthan.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">Parivarthan</div>
+                        <p class="line-clamp-3">Parivarthan Counselling, Training and Research Centre is a
+                            registered, non-profit society that provides multimodal services in the field of mental
+                            health(www.parivarthan.org). The Helpline is serviced by trained, professional counsellors
+                            who are committed to a rigorously ethical practice and who respect the confidentiality of
+                            the callers.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="140">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-7676602602">+91-7676602602</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>1:00 PM - 10:00 PM | Monday to Friday</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>All Indian languages except తెలుగు, മലയാളം</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="20">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:information@parivarthan.org">information@parivarthan.org</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://parivarthan.org/">https://parivarthan.org/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col_33">
+                <div data-aos="fade-in" data-aos-delay="1440" class="box relative">
+                    <div>
+                        <div class="img"><img class=" lazyloaded"
+                                src="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/fdUmqP-COOJ.png"
+                                data-srcset="https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/fdUmqP-COOJ.png"
+                                alt="" title=""></div>
+                        <div class="subHeading">COOJ Mental Health Foundation (COOJ)</div>
+                        <p class="line-clamp-3">COOJ Mental Health Foundation (COOJ) works towards promoting mental
+                            health in Goa under four major needs: Psycho-social rehabilitation, Suicide Prevention,
+                            Elder Care and Community Mental health. They operate a confidential helpline which offers
+                            emotional support individuals dealing with suicidal thoughts, as well as those experiencing
+                            other levels of distress. It is run by volunteers trained in Mindfulness Based Active
+                            Listening.</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-aos="fade-in" data-aos-delay="150">
+                                <i class="fas fa-phone"></i>
+                                <div class="last">
+                                    <span>Helpline: </span>
+                                    <a href="tel:+91-6361612525">+91-6361612525</a>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-clock"></i>
+                                <div class="last">
+                                    <span>Time: </span><span>01:00 PM - 07:00 PM | Monday to Friday</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-language"></i>
+                                <div class="last">
+                                    <span>Languages: </span><span>English</span>
+                                </div>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-envelope"></i>
+                                <div class="last">
+                                    <span>Email: </span><a
+                                        href="mailto:YouMatterByCooj@gmail.com">YouMatterByCooj@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="websiteLink" data-aos="fade-in" data-aos-delay="10">
+                                <i class="fas fa-globe"></i>
+                                <div class="last">
+                                    <span>Website: </span><a target="_blank"
+                                        href="https://cooj.co.in/">https://cooj.co.in/</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

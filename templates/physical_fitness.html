@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Fitness - Care Kit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/physical_fitness.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/pXtSLCL/carekit.png" type="image/x-icon"/>
+    <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+</head>
+
+<body>
+    <div id="loading-bar"></div>
+    <header>
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="https://i.ibb.co/vmSKxMW/medical-kit.png" alt="Care Kit Logo">
+            <span>Care Kit</span>
+        </a>
+        <h1>Physical Fitness</h1>
+        <p>Learn practical ways to keep your body fit and active. Discover exercises, tips, and routines to improve your physical well-being.</p>
+    </header>
+
+    <section class="main-content">
+        <h2>How to Keep Yourself Physically Fit</h2>
+        <p>Staying physically fit is crucial for a healthy body and mind. Explore the tips below to start or enhance your fitness journey.</p>
+
+        <div class="ways">
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/fitness-exercise-gym-equipment-free-photo.jpg?w=2210&quality=70" alt="Exercise Daily">
+                <h3>Exercise Daily</h3>
+                <p>Engage in at least 30 minutes of exercise daily to boost stamina, improve flexibility, and strengthen muscles.</p>
+                <a href="https://www.muscleandstrength.com/workout-routines" target="_blank">Explore Workouts</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/fitness-meal-in-a-diet-box-salmon-and-rice-free-photo.jpeg?w=2210&quality=70" alt="Healthy Diet">
+                <h3>Maintain a Healthy Diet</h3>
+                <p>Eat a balanced diet rich in fruits, vegetables, and proteins to fuel your body with essential nutrients.</p>
+                <a href="https://www.healthline.com/nutrition/best-diet-plans#_noHeaderPrefixedContent" target="_blank">Check Diet Plans</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/fresh-drink-summer-refreshment-hydration-free-image.jpeg?w=2210&quality=70" alt="Stay Hydrated">
+                <h3>Stay Hydrated</h3>
+                <p>Drink plenty of water to keep your body hydrated, improve digestion, and maintain energy levels.</p>
+                <a href="https://www.hsph.harvard.edu/news/hsph-in-the-news/the-importance-of-hydration/#:~:text=Drinking%20enough%20water%20each%20day,quality%2C%20cognition%2C%20and%20mood.n" target="_blank">Learn More</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/02/sleep-sleeping-bed-732x549-thumbnail.jpg" alt="Adequate Sleep">
+                <h3>Get Adequate Sleep</h3>
+                <p>Ensure 7-8 hours of quality sleep every night to help your body recover and perform at its best.</p>
+                <a href="https://newsinhealth.nih.gov/2021/04/good-sleep-good-health" target="_blank">Sleep Tips</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/young-fit-woman-stretching-her-body-after-home-workout-free-photo.jpg?w=2210&quality=70" alt="Stretching">
+                <h3>Stretch Regularly</h3>
+                <p>Incorporate stretching into your routine to improve flexibility and reduce the risk of injuries.</p>
+                <a href="https://www.medicalnewstoday.com/articles/stretching-routine#daily-routine" target="_blank">Stretching Routines</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/woman-riding-a-bike-during-evening-sun-free-photo.jpg?w=2210&quality=70" alt="Outdoor Activities">
+                <h3>Engage in Outdoor Activities</h3>
+                <p>Participate in activities like jogging, cycling, or hiking to stay active while enjoying nature.</p>
+                <a href="https://simplicable.com/life/outdoor-activities" target="_blank">Find Activities</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Care Kit | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

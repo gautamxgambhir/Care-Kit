@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Kit</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" href="https://i.ibb.co/pXtSLCL/carekit.png" type="image/x-icon"/>
+</head>
+
+<body>
+    <div id="loading-bar"></div>
+    <header>
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="https://i.ibb.co/vmSKxMW/medical-kit.png" alt="Care Kit Logo">
+            <span>Care Kit</span>
+        </a>
+        <h1>Welcome to Care Kit!</h1>
+        <p>Your trusted partner in mental and physical well-being. Explore resources for anxiety, depression, and more.
+            Learn self-care techniques, connect with experts, and take the first step towards a better you. Let’s make
+            your health a priority - because you matter.</p>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <a href="{{ url_for('mental_health') }}">
+                <i class="fas fa-heart"></i>
+                <h3>Mental Health Support</h3>
+                <p>Find resources and support for mental health issues like anxiety, depression, and more.</p>
+            </a>
+        </div>
+        <div class="feature-card">
+            <a href="{{ url_for('physical_fitness') }}">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Physical Fitness Tips</h3>
+                <p>Access expert advice on maintaining a healthy body through exercise and diet.</p>
+            </a>
+        </div>
+        <div class="feature-card">
+            <a href="{{ url_for('assistance') }}">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Assistance</h3>
+                <p>Reach out to our helpline at any time for personalized guidance and care.</p>
+            </a>
+        </div>
+        <div id="chatbot" class="main-card collapsed">
+            <button id="chatbot_toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                </svg>
+            </button>
+            <div class="main-title">
+                <div>
+                    <svg viewBox="0 0 640 512" title="robot">
+                        <path fill="currentColor"
+                            d="M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z" />
+                    </svg>
+                </div>
+                <span>
+                    Care Bot
+                </span>
+            </div>
+            <main class="msger-chat">
+                <div class="msg left-msg">
+                    <div class="msg-img" style="background-image: url(https://i.ibb.co/CzgH58n/bot.png)">
+                    </div>
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <div class="msg-info-name">Care Bot</div>
+                            <div class="msg-info-time"><time id="clock"></time></div>
+                        </div>
+                        <div class="msg-text">
+                            Welcome to Care Bot, a safe and supportive space where you can share your thoughts and
+                            feelings without
+                            fear of judgement.
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <form class="msger-inputarea">
+                <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+                <button type="button" id="micButton" class="msger-mic-btn">
+                    <i id="micbuttonI" class="fa-solid fa-microphone"></i>  
+                </button>
+                <button type="submit" class="msger-send-btn">Send</button>
+            </form>
+    </section>
+    <div class="content-wrapper">
+        <h1 class="testimonial-title">What People Say</h1>
+        <div class="green-line"></div>
+        <div class="wrapper-for-arrows">
+            <div id="reviewWrap" class="review-wrap">
+                <div id="imgDiv"></div>
+                <div id="personName"></div>
+                <div id="description"></div>
+            </div>
+            <div class="left-arrow-wrap arrow-wrap">
+                <div class="arrow" id="leftArrow"></div>
+            </div>
+            <div class="right-arrow-wrap arrow-wrap">
+                <div class="arrow" id="rightArrow"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-container">
+        <div class="accordion">
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+            <div class="green-line-2"></div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq1">What is Care Kit?</div>
+                <div class="accordion__content" id="faq1">
+                    <p>Care Kit is your trusted partner in mental and physical well-being, offering resources for
+                        anxiety,
+                        depression, and self-care. We provide expert advice, coping techniques, and tools to help you
+                        lead a
+                        healthier and more balanced life.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq2">What is Care Bot?</div>
+                <div class="accordion__content" id="faq2">
+                    <p>Care Bot is a supportive, friendly chatbot designed to provide emotional support and helpful guidance for mental and physical health issues, offering comfort and solutions for problems like anxiety and depression.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq3">Is my conversation with Care Bot private?</div>
+                <div class="accordion__content" id="faq3">
+                    <p>Yes, all conversations with Care Bot are confidential, ensuring your privacy and well-being are respected.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq4">How can I access the resources?</div>
+                <div class="accordion__content" id="faq4">
+                    <p>All our resources are available online through our website. You can browse articles, tips, and
+                        tools
+                        on various topics related to mental health, fitness, and overall well-being.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq5">Is Care Kit free to use?</div>
+                <div class="accordion__content" id="faq5">
+                    <p>Yes! Care Kit offers free access to all its resources and content. We believe in making mental
+                        health
+                        support accessible to everyone, anytime, anywhere.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq6">Can I contact a professional for advice?</div>
+                <div class="accordion__content" id="faq6">
+                    <p>While Care Kit provides helpful resources, we recommend consulting a certified healthcare
+                        professional for personalized advice. You can find helplines and expert recommendations on our
+                        platform.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header" data-toggle="#faq7">How do I get updates about new resources?</div>
+                <div class="accordion__content" id="faq7">
+                    <p>You can stay updated by signing up for our newsletter. You’ll receive the latest tips, articles,
+                        and
+                        information directly to your inbox.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Care Kit | All rights reserved.
+    </footer>
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health - Care Kit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mental_health.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/pXtSLCL/carekit.png" type="image/x-icon"/>
+    <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+</head>
+
+<body>
+    <div id="loading-bar"></div>
+    <header>
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="https://i.ibb.co/vmSKxMW/medical-kit.png" alt="Care Kit Logo">
+            <span>Care Kit</span>
+        </a>
+        <h1>Mental Health</h1>
+        <p>Discover strategies and techniques to improve mental well-being and maintain a positive mindset.</p>
+    </header>
+
+    <section class="main-content">
+        <h2>How to Improve Your Mental Health</h2>
+        <p>Taking care of your mental health is as important as physical health. Explore these tips to enhance your mental well-being.</p>
+
+        <div class="ways">
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/woman-meditating-on-wooden-platform-with-amazing-scenery-view-free-photo.jpg?w=2210&quality=70" alt="Meditation">
+                <h3>Meditation</h3>
+                <p>Practice meditation daily to reduce stress, improve focus, and achieve inner peace.</p>
+                <a href="https://www.mindful.org/how-to-meditate/" target="_blank">Learn Meditation</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/woman-writing-in-her-notebook-free-image.jpg?w=600&quality=80" alt="Journaling">
+                <h3>Journaling</h3>
+                <p>Write down your thoughts and feelings to process emotions and clarify your mindset.</p>
+                <a href="https://www.healthline.com/health/benefits-of-journaling" target="_blank">Explore Benefits</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/birthday-party-group-of-friends-celebrating.jpg?w=2210&quality=70" alt="Healthy Relationships">
+                <h3>Build Healthy Relationships</h3>
+                <p>Connect with loved ones to foster meaningful relationships and gain emotional support.</p>
+                <a href="https://www.mentalhealth.org.uk/our-work/public-engagement/healthy-relationships/top-tips-building-and-maintaining-healthy-relationships" target="_blank">Learn More</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/young-fitness-girl-running-up-the-stairs-free-photo.jpg?w=2210&quality=70" alt="Physical Activity">
+                <h3>Stay Active</h3>
+                <p>Engage in regular physical activities like yoga, jogging, or dancing to boost your mood.</p>
+                <a href="https://www.betterhealth.vic.gov.au/health/healthyliving/Physical-activity-how-to-get-active-when-you-are-busy" target="_blank">Explore Activities</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seek Therapy">
+                <h3>Seek Professional Help</h3>
+                <p>If needed, consult a therapist to address mental health issues and gain valuable guidance.</p>
+                <a href="https://www.therapyroute.com/" target="_blank">Find Therapists</a>
+            </div>
+
+            <div class="way-card">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/sweater-weather-fall-season-time-for-relaxation-and-journaling-free-image.jpeg?w=2210&quality=70" alt="Relaxation Techniques">
+                <h3>Practice Relaxation</h3>
+                <p>Learn relaxation techniques like deep breathing and visualization to calm your mind.</p>
+                <a href="https://www.mind.org.uk/information-support/tips-for-everyday-living/relaxation/relaxation-tips/" target="_blank">Relaxation Tips</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Care Kit | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
