@@ -4,9 +4,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-apiKey = os.getenv("API_KEY")
-
-print(apiKey)
+apiKey = os.environ.get('API_KEY')
 
 client = together.Together(
 api_key=apiKey
