@@ -1,12 +1,10 @@
-import together
+import requests
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 apiKey = os.environ.get('API_KEY')
-
-client = together.Together(api_key=apiKey)
 
 # In-memory storage for message history
 conversation_history = {}
@@ -36,17 +34,27 @@ def chatbot_response(user_id, msg):
     # Include system instruction and conversation history
     messages = [system_instruction] + conversation_history[user_id]
 
-    # Generate response
-    completion = client.chat.completions.create(
-        model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-        messages=messages,
-        max_tokens=100,
-        temperature=0.7,
-        top_p=1.0,
-    )
+    # Prepare the payload for the Together API
+    payload = {
+        "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+        "messages": messages,
+        "max_tokens": 100,
+        "temperature": 0.7,
+        "top_p": 1.0,
+    }
+
+    # Send the API request
+    headers = {"Authorization": f"Bearer {apiKey}"}
+    response = requests.post("https://api.together.xyz/v1/chat/completions", json=payload, headers=headers)
+
+    # Handle potential errors in the API response
+    if response.status_code != 200:
+        return "Sorry, I couldn't process your request right now. Please try again later."
+
+    response_data = response.json()
 
     # Get the assistant's reply
-    reply = completion.choices[0].message.content
+    reply = response_data["choices"][0]["message"]["content"]
 
     # Add the assistant's reply to the history
     conversation_history[user_id].append({"role": "assistant", "content": reply})
