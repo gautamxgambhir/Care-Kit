@@ -1,22 +1,23 @@
 <div align="center">
-  <img src="https://care-kit.vercel.app/logo.png" alt="Care Kit Logo"><br>
+  <img src="https://i.ibb.co/Y74HdJnh/carekittextlogo.png" alt="Care Kit Logo"><br>
 </div>
 
 -----------------
 
 # Care Kit: AI-Powered Mental Health Support Platform
 
-![Next.js](https://img.shields.io/badge/Next.js-13-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Flask](https://img.shields.io/badge/Flask-2.0-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-red)
 ![Vercel](https://img.shields.io/badge/hosted%20on-Vercel-black)
+![Together-AI](https://img.shields.io/badge/Together%20AI-0f6fff)
 
 ## What is it?
 
 Care Kit is a mental health support platform that provides users with AI-powered mental wellness resources, self-help tools, and emotional support. Whether you're struggling with stress, anxiety, or just need a space to express yourself, **Care Kit** offers:
 
-- **Anonymous Journaling** for expressing thoughts safely.
-- **AI Therapy Chat** for guidance and emotional support.
+- **AI Therapy Chat (CareBot)** powered by Together API for guidance and emotional support.
 - **Mindfulness & Wellness Tips** to improve mental health.
 - **Emergency Contacts & Helplines** for immediate help.
 
@@ -24,8 +25,7 @@ Care Kit is a mental health support platform that provides users with AI-powered
 
 Here’s what makes **Care Kit** an essential companion for mental well-being:
 
-- **Anonymous Journal**: Securely write down your thoughts and feelings without worrying about privacy.
-- **AI Chatbot**: Receive AI-generated emotional support and mental wellness tips.
+- **AI CareBot**: Receive AI-generated emotional support and mental wellness tips using Together API.
 - **Mindfulness & Coping Strategies**: Learn techniques to manage stress, anxiety, and other emotions.
 - **Resources & Help**: Find emergency helplines and support groups for mental health assistance.
 - **Dark/Light Theme Toggle**: Customize your experience based on your preference.
@@ -46,12 +46,12 @@ Care Kit is hosted on Vercel and available online:
 ### 2. Install dependencies:
 ```bash
 cd Care-Kit
-npm install
+pip install -r requirements.txt
 ```
 
-### 3. Run the development server:
+### 3. Run the Flask server:
 ```bash
-npm run dev
+python app.py
 ```
 
 ### 4. Deploy on Vercel:
@@ -68,16 +68,15 @@ vercel
 
 Once deployed or running locally, users can:
 
-- **Write anonymous journal entries** to express their emotions.
-- **Interact with the AI chat** for mental health support.
+- **Interact with the AI CareBot** for mental health support.
 - **Access mindfulness and wellness techniques** to cope with stress.
 - **Find emergency helplines** for immediate assistance.
 
 ## Dependencies
 
-- [**Next.js**](https://nextjs.org/) - Framework for server-side rendering.
-- [**React.js**](https://react.dev/) - Frontend UI library.
-- [**Tailwind CSS**](https://tailwindcss.com/) - Styling framework.
+- [**Flask**](https://flask.palletsprojects.com/en/3.0.x/) - Backend server for handling AI chatbot.
+- [**Together API**](https://www.together.ai/) - AI-powered chatbot integration.
+- [**HTML, CSS, JavaScript**] - Frontend for user interaction.
 - [**Vercel**](https://vercel.com/) - Hosting platform.
 
 ## Contributing
