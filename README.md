@@ -28,7 +28,6 @@ Here’s what makes **Care Kit** an essential companion for mental well-being:
 - **AI CareBot**: Receive AI-generated emotional support and mental wellness tips using Together API.
 - **Mindfulness & Coping Strategies**: Learn techniques to manage stress, anxiety, and other emotions.
 - **Resources & Help**: Find emergency helplines and support groups for mental health assistance.
-- **Dark/Light Theme Toggle**: Customize your experience based on your preference.
 
 ## Where to Access It?
 
